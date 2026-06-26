@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibis Styles Hotel</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#0b1f3a;
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+}
+
+header h1{
+display:inline-block;
+}
+
+nav{
+float:right;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:80vh;
+background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero div{
+background:rgba(0,0,0,.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:55px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+background:#d4af37;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+section{
+padding:60px 10%;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#0b1f3a;
+}
+
+.rooms{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.facilities{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.facility{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.facility i{
+font-size:45px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#0b1f3a;
+color:white;
+padding:15px;
+border:none;
+cursor:pointer;
+width:100%;
+}
+
+footer{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+nav{
+float:none;
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.contact{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🏨 Ibis Styles Hotel</h1>
+
+<nav>
+<a href="#rooms">Rooms</a>
+<a href="#facilities">Facilities</a>
+<a href="#about">About</a>
+<a href="#jobs">Vacancies</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Welcome to Ibis Styles Hotel</h2>
+
+<p>Luxury • Comfort • Hospitality</p>
+
+<a class="btn" href="#rooms">Explore Rooms</a>
+
+</div>
+
+</section>
+
+<section id="rooms">
+
+<h2 class="title">Our Rooms</h2>
+
+<div class="rooms">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80">
+<h3>Deluxe Room</h3>
+<p>Modern room with free Wi-Fi, Smart TV and breakfast.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80">
+<h3>Executive Room</h3>
+<p>Spacious executive room with city views.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=900&q=80">
+<h3>Family Suite</h3>
+<p>Perfect for family vacations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="facilities">
+
+<h2 class="title">Facilities</h2>
+
+<div class="facilities">
+
+<div class="facility">
+<i class="fas fa-wifi"></i>
+<h3>Free Wi-Fi</h3>
+</div>
+
+<div class="facility">
+<i class="fas fa-swimming-pool"></i>
+<h3>Swimming Pool</h3>
+</div>
+
+<div class="facility">
+<i class="fas fa-dumbbell"></i>
+<h3>Gym</h3>
+</div>
+
+<div class="facility">
+<i class="fas fa-utensils"></i>
+<h3>Restaurant</h3>
+</div>
+
+<div class="facility">
+<i class="fas fa-spa"></i>
+<h3>Spa</h3>
+</div>
+
+<div class="facility">
+<i class="fas fa-car"></i>
+<h3>Parking</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<p>
+
+Located at
+
+<b>401 MacPherson Rd, Corner Of MacPherson And, Singapore</b>,
+
+Ibis Styles Hotel offers luxury accommodation, friendly service and modern facilities for both business and leisure travelers.
+
+</p>
+
+</section>
+
+<section id="jobs">
+
+<h2 class="title">Current Vacancies</h2>
+
+<ul>
+
+<li>Human Resource Manager</li>
+<li>IT Support Officer</li>
+<li>Hotel Manager</li>
+<li>Receptionist</li>
+<li>Chef</li>
+<li>Housekeeping Supervisor</li>
+<li>Restaurant Waiter</li>
+<li>Security Officer</li>
+<li>Marketing Executive</li>
+<li>Accountant</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Send your CV to:
+
+<b>contact@lbistylehotel.online</b>
+
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Contact Information</h3>
+
+<br>
+
+<p><b>Phone:</b> +65 85741564</p>
+
+<p><b>Email:</b> contact@lbistylehotel.online</p>
+
+<p><b>Address:</b> 401 MacPherson Rd, Singapore</p>
+
+</div>
+
+<div>
+
+<form action="mailto:contact@lbistylehotel.online">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Ibis Styles Hotel. All Rights Reserved.
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/qr/6APS4SQSXXMDE1"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</body>
+</html>
